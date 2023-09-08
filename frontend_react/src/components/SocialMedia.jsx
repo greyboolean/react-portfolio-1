@@ -15,7 +15,7 @@ const SocialMedia = () => (
 		</div>
 		<div>
 			<a
-				href="https://www.hackerrank.com/greyboolean"
+				href="https://github.com/greyboolean"
 				target="_blank"
 				rel="noreferrer"
 			>
@@ -24,7 +24,7 @@ const SocialMedia = () => (
 		</div>
 		<div>
 			<a
-				href="https://github.com/greyboolean"
+				href="https://www.hackerrank.com/greyboolean"
 				target="_blank"
 				rel="noreferrer"
 			>
