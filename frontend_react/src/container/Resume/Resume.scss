@@ -124,7 +124,57 @@
 /* new */
 
 .app__resume {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
+	flex: 1;
+	width: 100%;
+	flex-direction: column;
+}
+
+.app__resume-item {
+	margin-top: 4rem;
+	width: 60%;
+	min-height: 320px;
+	background-color: var(--white-color);
+	display: flex;
+	flex-direction: row;
+	padding: 2rem;
+	border-radius: 15px;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+
+	// transition: all 0.3s ease-in-out;
+
+  a {
+    height: 60px;
+    width: 120px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background: linear-gradient(135deg, #89a6ef, var(--secondary-color));
+    padding: 1rem;
+    border-radius: 30px;
+  }
+
+	img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	@media screen and (min-width: 2000px) {
+		min-height: 450px;
+
+		img {
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+	@media screen and (max-width: 850px) {
+		width: 100%;
+	}
+
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+	}
 }

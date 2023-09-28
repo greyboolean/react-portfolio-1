@@ -12,7 +12,7 @@ const Resume = () => {
 
 	useEffect(() => {
 		const query =
-			'*[_type == "resumes"] {"resumeURL": resumeFile.asset->url}';
+			'*[_type == "resumes"] {"resumeURL": resumeFile.asset->url, resumeImages}';
 
 		client.fetch(query).then((data) => {
 			setResumes(data);
@@ -21,29 +21,15 @@ const Resume = () => {
 
 	return (
 		<>
+			<h2 className="head-text">
+				Take a Look at my <span>Resume</span>
+			</h2>
+
 			{resumes.length > 0 && (
 				<>
 					<div className="app__resume-item app__flex">
-						<a href={resumes[0].resumeURL}>download</a>
-						<a
-							href={resumes[0].resumeURL}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							View
-						</a>
-						{/* <img
-							// src={urlFor(resume.resumeImages[currentIndex])}
-							alt={`page ${currentIndex}`}
-						/>
-
-						<div className="app__resume-content">
-              <p className="p-text">I am a backend developer with a passion for building beautiful and functional web application. I am a backend developer with a passion for building beautiful and functional web application.</p>
-              <div>
-                <h4 className="bold-text">Michael</h4>
-                <h5 className="p-text">Google</h5>
-              </div>
-            </div> */}
+						<a href={resumes[0].resumeURL}>Resume</a>
+						{console.log(resumes)}
 					</div>
 				</>
 			)}
