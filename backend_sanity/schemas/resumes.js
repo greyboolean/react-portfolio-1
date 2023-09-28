@@ -14,19 +14,12 @@ export default {
 			type: 'file',
 		},
 		{
-			name: 'resumeImages',
-			title: 'Resume Images',
-			type: 'array',
-			of: [
-				{
-					name: 'resumeImage',
-					title: 'Resume Image',
-					type: 'image',
-					options: {
-						hotspot: true,
-					},
-				},
-			],
+			name: 'resumeImage',
+			title: 'Resume Image',
+			type: 'image',
+			options: {
+				hotspot: true,
+			},
 		},
 	],
 };

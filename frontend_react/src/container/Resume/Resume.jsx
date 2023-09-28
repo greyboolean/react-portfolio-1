@@ -12,7 +12,7 @@ const Resume = () => {
 
 	useEffect(() => {
 		const query =
-			'*[_type == "resumes"] {"resumeURL": resumeFile.asset->url, resumeImages}';
+			'*[_type == "resumes"] {"resumeURL": resumeFile.asset->url, resumeImage, title}';
 
 		client.fetch(query).then((data) => {
 			setResumes(data);
@@ -29,6 +29,8 @@ const Resume = () => {
 				<>
 					<div className="app__resume-item app__flex">
 						<a href={resumes[0].resumeURL}>Resume</a>
+						<img src={urlFor(resumes[0].resumeImage)} alt={resumes[0].title} />
+						<div className='resume-overlay'></div>
 						{console.log(resumes)}
 					</div>
 				</>
