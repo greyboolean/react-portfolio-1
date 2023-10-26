@@ -27,7 +27,8 @@
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fef4f5;
+    // background-color: #fef4f5;
+    background-color: #f2f7fb;
 
     transition: all 0.3s ease-in-out;
 
@@ -45,7 +46,8 @@
       font-weight: 500;
     }
     &:hover {
-      box-shadow: 0 0 25px #fef4f5;
+      // box-shadow: 0 0 25px #fef4f5;
+      box-shadow: 0 0 25px #f2f7fb;
     }
 
     @media screen and (max-width: 450px) {

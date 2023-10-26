@@ -1,12 +1,12 @@
-import React from 'react';
-import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { FaHackerrank } from 'react-icons/fa';
+import React from "react";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { FaHackerrank } from "react-icons/fa";
 
 const SocialMedia = () => (
 	<div className="app__social">
 		<div>
 			<a
-				href="https://www.linkedin.com/in/madukasaubhagya/"
+				href="https://www.linkedin.com/in/madukasaubhagya"
 				target="_blank"
 				rel="noreferrer"
 			>

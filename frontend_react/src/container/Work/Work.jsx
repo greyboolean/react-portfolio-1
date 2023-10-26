@@ -39,20 +39,23 @@ const Work = () => {
 	return (
 		<>
 			<h2 className="head-text">
-				My Creative <span>Portfolio</span> Section
+				My <span>Portfolio</span> of projects
 			</h2>
+			{/* <h2 className="head-text">
+				My Creative <span>Portfolio</span> Section
+			</h2> */}
 
 			<div className="app__work-filter">
 				{[
-					'UI/UX',
-					'Web App',
-					'Mobile App',
-					'React JS',
+					// 'UI/UX',
+					// 'Web App',
+					// 'Mobile App',
+					// 'React JS',
 					'Java',
 					'HTML/CSS',
 					'JavaScript',
 					'React',
-					'MERN',
+					'Node.js',
 					'All',
 				].map((item, index) => (
 					<div
