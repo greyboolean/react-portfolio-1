@@ -1,0 +1,227 @@
+// .app__resume {
+//   flex: 1;
+//   width: 100%;
+//   flex-direction: column;
+// }
+
+// .app__resume-item {
+//   width: 60%;
+//   min-height: 320px;
+//   background-color: var(--white-color);
+//   display: flex;
+//   flex-direction: row;
+//   padding: 2rem;
+//   border-radius: 15px;
+//   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+
+//   transition: all 0.3s ease-in-out;
+
+//   img {
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50%;
+//     object-fit: cover;
+//   }
+
+//   @media screen and (min-width: 2000px) {
+//     min-height: 450px;
+
+//     img {
+//       width: 150px;
+//       height: 150px;
+//     }
+//   }
+
+//   @media screen and (max-width: 850px) {
+//     width: 100%;
+//   }
+
+//   @media screen and (max-width: 600px) {
+//     flex-direction: column;
+//   }
+// }
+
+// .app__resume-content {
+//   flex: 1;
+//   height: 100%;
+//   padding: 0 2rem;
+//   text-align: left;
+
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: flex-start;
+
+//   p {
+//     font-size: 1.25rem;
+//     line-height: 2rem;
+//     color: var(--black-color);
+//     font-family: var(--font-base);
+
+//     @media screen and (min-width: 2000px) {
+//       font-size: 2rem;
+//       line-height: 3.5rem;
+//     }
+//   }
+
+//   h4 {
+//     font-weight: 600;
+//     color: var(--secondary-color);
+//     margin-top: 2rem;
+//   }
+
+//   h5 {
+//     font-weight: 400;
+//     color: var(--gray-color);
+//     margin-top: 5px;
+//   }
+
+//   @media screen and (max-width: 600px) {
+//     margin-top: 2rem;
+//     padding: 0;
+//   }
+// }
+
+// .app__resume-btns {
+//   flex-direction: row;
+//   margin-top: 1rem;
+
+//   div {
+//     width: 50px;
+//     height: 50px;
+//     border-radius: 50%;
+//     background-color: var(--white-color);
+
+//     margin: 1rem;
+//     transition: all 0.3s ease-in-out;
+
+//     svg {
+//       width: 20px;
+//       height: 20px;
+//       color: var(--secondary-color);
+//     }
+
+//     &:hover {
+//       background-color: var(--secondary-color);
+
+//       svg {
+//         color: var(--white-color);
+//       }
+//     }
+
+//     @media screen and (min-width: 2000px) {
+//       width: 100px;
+//       height: 100px;
+
+//       svg {
+//         width: 45px;
+//         height: 45px;
+//       }
+//     }
+//   }
+// }
+
+/* new */
+
+.app__resume {
+	flex: 1;
+	width: 100%;
+	flex-direction: column;
+}
+
+.app__resume-item {
+	position: relative;
+	margin-top: 4rem;
+	width: 60%;
+	// min-height: 320px;
+	height: 320px;
+	background-color: var(--white-color);
+	display: flex;
+	flex-direction: row;
+	padding: 2rem 0;
+	border-radius: 15px;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+	transition: all 0.3s ease-in-out;
+
+	a {
+		height: 60px;
+		width: 120px;
+		font-size: 1.2rem;
+		text-align: center;
+		text-decoration: none;
+		color: var(--white-color);
+		background: var(--secondary-color);
+		padding: 1rem;
+		border-radius: 30px;
+		position: absolute;
+		z-index: 2;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--secondary-color);
+      transform: scale(1.2);
+    }
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+    transition: all 0.3s ease-in-out;
+	}
+
+	.resume-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		// background: linear-gradient(135deg, #89a6ef, var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--gray-color));
+		background: var(--white-color);
+		border-radius: 15px;
+		opacity: 0.7;
+		z-index: 1;
+    transition: all 0.3s ease-in-out;
+	}
+
+  &:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+
+    .resume-overlay {
+      opacity: 0.5;
+    }
+
+    img {
+      transform: scale(1.3);
+    }
+  }
+
+	@media screen and (min-width: 2000px) {
+		height: 500px;
+
+    a {
+      font-size: 1.75rem;
+      height: 75px;
+      width: 160px;
+      border-radius: 37.5px;
+    }
+
+		// img {
+		// 	width: 150px;
+		// 	height: 150px;
+		// }
+	}
+
+	@media screen and (max-width: 850px) {
+		width: 100%;
+	}
+
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+	}
+}
