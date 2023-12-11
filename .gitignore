@@ -2,3 +2,5 @@ frontend_react/node_modules
 backend_sanity/node_modules
 
 *.env
+
+original_assets
