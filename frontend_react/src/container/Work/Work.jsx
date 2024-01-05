@@ -56,6 +56,7 @@ const Work = () => {
 					'JavaScript',
 					'React',
 					'Node.js',
+					'MERN',
 					'All',
 				].map((item, index) => (
 					<div
