@@ -4,3 +4,4 @@ backend_sanity/node_modules
 *.env
 
 original_assets
+frontend_react/build
